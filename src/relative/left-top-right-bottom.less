@@ -1,0 +1,14 @@
+@typeList: left, top, right, bottom;
+@maxLoop: 50;
+
+// Loop through the typeList and maxLoop to create the classes
+each(@typeList, .(@type){
+  each(range(@maxLoop),.(@i){
+    // multiply by 2px to convert to px
+    @j: @i * 2;
+    .move-towards-@{type}-@{j} {
+      position: relative;
+        @{type}: @j * 1px;
+    }
+  });
+});

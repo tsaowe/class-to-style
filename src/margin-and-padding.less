@@ -1,0 +1,44 @@
+@typeList: margin, padding;
+@directionList: top, right, bottom, left;
+@maxLoop: 50;
+
+
+// Loop through the typeList and directionList and maxLoop to create the classes
+//  eg:  margin-top-2, margin-top-4, ..., margin-top-100
+each(@typeList, .(@type){
+
+  each(@directionList,.(@direction){
+
+    each(range(@maxLoop),.(@i){
+      @j: @i * 2;
+      .@{type}-@{direction}-@{j}{@{type}-@{direction}: @j * 1px;}
+    });
+
+  });
+
+});
+
+
+//  eg:  margin-2, margin-4, ..., margin-100
+each(@typeList, .(@type){
+  each(range(@maxLoop),.(@i){
+    // multiply by 2px to convert to px
+    @j: @i * 2;
+    .@{type}-@{j} {
+        @{type}: @j * 1px;
+    }
+  });
+});
+
+//  eg: margin: 2px 2px;
+each(@typeList, .(@type){
+  each(range(@maxLoop),.(@i){
+    @ii: @i * 2;
+    each(range(@maxLoop),.(@j){
+      @jj: @j * 2;
+        .@{type}-@{ii}-@{jj} {
+            @{type}: @ii * 1px @jj * 1px;
+        }
+    });
+  });
+});

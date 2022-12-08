@@ -1,0 +1,73 @@
+@gapMax: 20;
+
+.flex() {
+  display: flex;
+}
+
+.flex {
+    .flex();
+
+  &.wrap {
+    .flex();
+    flex-wrap: wrap;
+  }
+}
+
+.align-self-end {
+  .flex();
+  align-self: flex-end;
+}
+
+.align-self-center {
+  .flex();
+  align-self: center;
+}
+
+////  gap-[2,4,6,...50]
+each(range(@gapMax), .(@gap) {
+  @gapValue: @gap * 2;
+  .gap-@{gapValue} {
+    gap: @gapValue * 2px;
+  }
+});
+//  gap-2-4
+each(range(@gapMax), .(@gap1) {
+  @gap1Value: @gap1 * 2;
+  each(range(@gapMax), .(@gap2) {
+    @gap2Value: @gap2 * 2;
+    .gap-@{gap1Value}-@{gap2Value} {
+      gap: @gap1Value * 1px @gap2Value * 1px;
+    }
+  });
+});
+
+
+.flex-column {
+.flex();
+  flex-direction: column;
+}
+
+.flex-space-between {
+.flex();
+  justify-content: space-between;
+}
+
+.flex-space-around {
+.flex();
+  justify-content: space-around;
+}
+
+.flex-align-start {
+.flex();
+    align-items: flex-start;
+}
+
+.flex-align-center {
+  .flex();
+  align-items: center;
+}
+
+.flex-align-end {
+.flex();
+  align-items: flex-end;
+}
