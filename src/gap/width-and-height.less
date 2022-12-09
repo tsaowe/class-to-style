@@ -1,9 +1,8 @@
-@typeList: width, height;
-@maxLoop: 101;
+@widthAndHeightList: width, height;
 
 // Loop through the typeList and maxLoop to create the classes
-each(@typeList, .(@type){
-  each(range(@maxLoop),.(@i){
+each(@widthAndHeightList, .(@type){
+  each(range(201),.(@i){
     // multiply by 2px to convert to px
     @j: (@i - 1) * 2;
     .@{type}-@{j} {
@@ -17,6 +16,14 @@ each(@typeList, .(@type){
     width: 100%;
 }
 
+.width-auto {
+    width: auto;
+}
+
 .height-100-percent {
     height: 100%;
+}
+
+.height-auto {
+    height: auto;
 }

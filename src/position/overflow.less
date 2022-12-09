@@ -1,0 +1,17 @@
+@import "../util/constant.less";
+
+
+each(@xyList, .(@xy){
+  each(@overflowList, .(@overflow){
+    .overflow-@{xy}-@{overflow} {
+      overflow-@{xy}: @overflow;
+    }
+  });
+});
+
+
+each(@overflowList, .(@overflow){
+  .overflow-@{overflow} {
+    overflow: @overflow;
+  }
+});
