@@ -1,6 +1,6 @@
 {
   "name": "class-to-style",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "style your content with only class name",
   "main": "index.js",
   "repository": "git@github.com:tsaowe/class-to-style.git",
