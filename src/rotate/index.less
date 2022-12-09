@@ -6,7 +6,7 @@
 //  rotate
 each(range(@rotateMinDegValue, @rotateMaxDegValue, @rotateStep), .(@i) {
   @rotate: @i;
-  .rotate-@{rotate} {
+  .rotate-@{rotate}-deg {
     transform: rotate(@rotate * 1deg);
   }
 });
