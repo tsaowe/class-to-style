@@ -14,9 +14,7 @@
     "dev": "lessc src/index.less dist/class-to-style.css",
     "build": "lessc src/index.less dist/class-to-style.min.css --clean-css"
   },
-  "dependencies": {
-    "reset-css": "^5.0.1"
-  },
+  "dependencies": {},
   "files": [
     "dist",
     "src"
