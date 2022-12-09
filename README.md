@@ -7,6 +7,15 @@
 </p>
 
 > only use css to style your content
+```
+yarn add class-to-style
+
+npm install class-to-style
+
+import 'class-to-style/dist/class-to-style.css'
+
+
+```
 
 ## TODO
 - [x] ellipsis

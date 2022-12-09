@@ -10,8 +10,8 @@
     "less": "^4.1.3"
   },
   "scripts": {
-    "dev": "lessc src/index.less dist/css/index.css",
-    "build": "lessc src/index.less dist/css/index.css --compress"
+    "dev": "lessc src/index.less dist/class-to-style.css",
+    "build": "lessc src/index.less dist/class-to-style.css --compress"
   },
   "dependencies": {
     "reset-css": "^5.0.1"
