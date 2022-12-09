@@ -8,6 +8,29 @@
 
 > only use css to style your content
 
+## TODO
+- [x] ellipsis
+- [x] image scale or crop or fit
+- [x] hover cursor style
+- [x] transition all
+- [x] font-size
+- [x] opacity
+- [x] vh,vw 1-100
+- [x] hide, hidden, display-none
+- [x] vertical divider, horizental devider
+- [x] user-select-none
+- [ ] text wrap
+- [x] float absolute
+- [x] rotate
+- [x] z-index
+- [x] width: 100%, height: 100%
+- [x] lineheight 180%
+- [x] border-radius
+- [ ] text-decoration, make as link
+- [ ] overflow y 
+
+
+
 ## Author
 
 👤 **caowei**

@@ -1,0 +1,26 @@
+@min: 0;
+@max: 100;
+@step: 1;
+
+
+@percentStart: 0;
+@percentEnd: 1;
+@percentStep: 0.1;
+
+
+
+//  border-radius
+each(range(@min, @max, @step), .(@i) {
+  @borderRadius: @i;
+  .border-radius-@{borderRadius} {
+    border-radius: @borderRadius * 1px;
+  }
+});
+
+//  border-radius
+each(range(@percentStart, @percentEnd, @percentStep), .(@i) {
+  @borderRadius: ceil(@i * 100);
+  .border-radius-@{borderRadius}-percent {
+    border-radius: percentage(@i);
+  }
+});

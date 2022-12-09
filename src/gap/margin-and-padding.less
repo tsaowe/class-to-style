@@ -1,6 +1,6 @@
 @typeList: margin, padding;
 @directionList: top, right, bottom, left;
-@maxLoop: 50;
+@maxLoop: 51;
 
 
 // Loop through the typeList and directionList and maxLoop to create the classes
@@ -10,7 +10,7 @@ each(@typeList, .(@type){
   each(@directionList,.(@direction){
 
     each(range(@maxLoop),.(@i){
-      @j: @i * 2;
+      @j: (@i - 1) * 2;
       .@{type}-@{direction}-@{j}{@{type}-@{direction}: @j * 1px;}
     });
 
@@ -23,7 +23,7 @@ each(@typeList, .(@type){
 each(@typeList, .(@type){
   each(range(@maxLoop),.(@i){
     // multiply by 2px to convert to px
-    @j: @i * 2;
+    @j: (@i - 1) * 2;
     .@{type}-@{j} {
         @{type}: @j * 1px;
     }
@@ -33,7 +33,7 @@ each(@typeList, .(@type){
 //  eg: margin: 2px 2px;
 each(@typeList, .(@type){
   each(range(@maxLoop),.(@i){
-    @ii: @i * 2;
+    @ii: (@i - 1) * 2;
     each(range(@maxLoop),.(@j){
       @jj: @j * 2;
         .@{type}-@{ii}-@{jj} {
