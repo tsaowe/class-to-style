@@ -26,7 +26,7 @@ import 'class-to-style/dist/class-to-style.css'
 <table>
 <thead>
 <tr>
-<th>class name</th>
+<th style="width: 250px">class name</th>
 <th>min value</th>
 <th>max value</th>
 <th>step</th>
@@ -36,7 +36,7 @@ import 'class-to-style/dist/class-to-style.css'
 <tbody>
 
 <tr>
-<td><b>width-{n}</b></td>
+<td><b>.width-{n}</b></td>
 <td>0</td>
 <td>100</td>
 <td>2</td>
@@ -49,7 +49,7 @@ import 'class-to-style/dist/class-to-style.css'
 
 
 <tr>
-<td><b>height-{n}</b></td>
+<td><b>.height-{n}</b></td>
 <td>0</td>
 <td>100</td>
 <td>2</td>
@@ -62,7 +62,7 @@ import 'class-to-style/dist/class-to-style.css'
 
 
 <tr>
-<td><b>border-radius-{n}</b></td>
+<td><b>.border-radius-{n}</b></td>
 <td>0</td>
 <td>100</td>
 <td>2</td>
@@ -71,7 +71,7 @@ import 'class-to-style/dist/class-to-style.css'
 
 <tr>
 <td>
-<b>border-radius-{n}-percent</b>
+<b>.border-radius-{n}-percent</b>
 </td>
 <td>0</td>
 <td>100</td>
@@ -82,8 +82,8 @@ import 'class-to-style/dist/class-to-style.css'
 <tr>
 <td>
 <b>
-background-white <br>
-bg-white
+.background-white <br>
+.bg-white
 </b>
 </td>
 <td>--</td>
@@ -95,8 +95,8 @@ bg-white
 <tr>
 <td>
 <b>
-background-black <br>
-bg-black
+.background-black <br>
+.bg-black
 </b>
 </td>
 <td>--</td>
@@ -108,7 +108,7 @@ bg-black
 <tr>
 <td>
 <b>
-cursor-{name}
+.cursor-{name}
 </b>
 </td>
 <td>--</td>
@@ -120,7 +120,7 @@ cursor-{name}
 <tr>
 <td>
 <b>
-display-{name}
+.display-{name}
 </b>
 </td>
 <td>--</td>
@@ -132,8 +132,8 @@ display-{name}
 <tr>
 <td>
 <b>
-vertical-divider <br>
-divider-vertical
+.vertical-divider <br>
+.divider-vertical
 </b>
 </td>
 <td>--</td>
@@ -145,8 +145,8 @@ divider-vertical
 <tr>
 <td>
 <b>
-horizontal-divider <br>
-divider-horizontal
+.horizontal-divider <br>
+.divider-horizontal
 </b>   
 </td>
 <td>--</td>
@@ -157,7 +157,7 @@ divider-horizontal
 
 <tr>
 <td>
-<b>font-{n}-regular</b>
+<b>.font-{n}-regular</b>
 </td>
 <td>10</td>
 <td>50</td>
@@ -167,7 +167,7 @@ divider-horizontal
 
 <tr>
 <td>
-<b>font-{n}-medium</b>
+<b>.font-{n}-medium</b>
 </td>
 <td>10</td>
 <td>50</td>
@@ -177,7 +177,7 @@ divider-horizontal
 
 <tr>
 <td>
-<b>font-weight-{n}</b>
+<b>.font-weight-{n}</b>
 </td>
 <td>100</td>
 <td>1000</td>
@@ -188,7 +188,7 @@ divider-horizontal
 
 <tr>
 <td>
-<b>margin-{n}</b>
+<b>.margin-{n}</b>
 </td>
 <td>0</td>
 <td>100</td>
@@ -198,7 +198,7 @@ divider-horizontal
 
 <tr>
 <td>
-<b>margin-{m}-{n}</b>
+<b>.margin-{m}-{n}</b>
 </td>
 <td>0</td>
 <td>100</td>
@@ -208,7 +208,7 @@ divider-horizontal
 
 <tr>
 <td>
-<b>margin-{direction}-{n}</b>
+<b>.margin-{direction}-{n}</b>
 </td>
 <td>0</td>
 <td>100</td>
@@ -219,7 +219,7 @@ divider-horizontal
 
 <tr>
 <td>
-<b>padding-{n}</b>
+<b>.padding-{n}</b>
 </td>
 <td>0</td>
 <td>100</td>
@@ -229,7 +229,7 @@ divider-horizontal
 
 <tr>
 <td>
-<b>padding-{m}-{n}</b>
+<b>.padding-{m}-{n}</b>
 </td>
 <td>0</td>
 <td>100</td>
@@ -239,15 +239,15 @@ divider-horizontal
 
 <tr>
 <td>
-<b>padding-{direction}-{n}</b>
+<b>.padding-{direction}-{n}</b>
 </td>
 <td>0</td>
 <td>100</td>
 <td>2</td>
 <td>padding-{ left | right | bottom | top }: 0px 2px 4px 6px 8px 10px 12px 14px 16px 18px 20px 22px 24px 26px 28px 30px 32px 34px 36px 38px 40px 42px 44px 46px 48px 50px 52px 54px 56px 58px 60px 62px 64px 66px 68px 70px 72px 74px 76px 78px 80px 82px 84px 86px 88px 90px 92px 94px 96px 98px 100px;</td>
 </tr>
-<tr><td><b>image-width-fit,<br> image-height-auto</b></td><td>--</td><td>--</td><td>--</td><td>object-fit: cover;</td></tr>
-<tr><td><b>image-height-fit,<br> image-width-auto</b></td><td>--</td><td>--</td><td>--</td><td>object-fit: contain;</td></tr>
+<tr><td><b>.image-width-fit,<br> .image-height-auto</b></td><td>--</td><td>--</td><td>--</td><td>object-fit: cover;</td></tr>
+<tr><td><b>.image-height-fit,<br> .image-width-auto</b></td><td>--</td><td>--</td><td>--</td><td>object-fit: contain;</td></tr>
 
 <tr>
 <td>
@@ -290,7 +290,7 @@ child: align-self-center<br>
 
 <tr>
 <td>
-<b>opacity-{n}</b>
+<b>.opacity-{n}</b>
 </td>
 <td>0</td>
 <td>100</td>
@@ -300,7 +300,7 @@ child: align-self-center<br>
 
 <tr>
 <td>
-<b>position-{type}</b>
+<b>.position-{type}</b>
 </td>
 <td>--</td>
 <td>--</td>
@@ -310,7 +310,7 @@ child: align-self-center<br>
 
 <tr>
 <td>
-<b>float-{direction}</b>
+<b>.float-{direction}</b>
 </td>
 <td>--</td>
 <td>--</td>
@@ -320,7 +320,7 @@ child: align-self-center<br>
 
 <tr>
 <td>
-<b>z-index-{n}</b>
+<b>.z-index-{n}</b>
 </td>
 <td>0</td>
 <td>10</td>
@@ -330,7 +330,7 @@ child: align-self-center<br>
 
 <tr>
 <td>
-<b>{direction}-{n}</b>
+<b>.{direction}-{n}</b>
 </td>
 <td>0</td>
 <td>100</td>
@@ -341,7 +341,17 @@ child: align-self-center<br>
 
 <tr>
 <td>
-<b>overflow-{axis}-{type}</b>
+<b>.overflow-{type}</b>
+</td>
+<td>--</td>
+<td>--</td>
+<td>--</td>
+<td>overflow: {auto | hidden | scroll | visible}</td>
+</tr>
+
+<tr>
+<td>
+<b>.overflow-{axis}-{type}</b>
 </td>
 <td>--</td>
 <td>--</td>
@@ -349,9 +359,11 @@ child: align-self-center<br>
 <td>overflow-{x | y} - {auto | hidden | scroll | visible}:{auto | hidden | scroll | visible}</td>
 </tr>
 
+
+
 <tr>
 <td>
-<b>move-towards-{direction}-{n}</b>
+<b>.move-towards-{direction}-{n}</b>
 </td>
 <td>0</td>
 <td>100</td>
@@ -361,7 +373,7 @@ child: align-self-center<br>
 
 <tr>
 <td>
-<b>{direction}-{n}-percent</b>
+<b>.{direction}-{n}-percent</b>
 </td>
 <td>0</td>
 <td>100</td>
@@ -371,7 +383,7 @@ child: align-self-center<br>
 
 <tr>
 <td>
-<b>rotate-{n}-deg</b>
+<b>.rotate-{n}-deg</b>
 </td>
 <td>0</td>
 <td>360</td>
@@ -381,7 +393,7 @@ child: align-self-center<br>
 
 <tr>
 <td>
-<b>ellipsis-{n}-line</b>
+<b>.ellipsis-{n}-line</b>
 </td>
 <td>1</td>
 <td>5</td>
@@ -391,7 +403,7 @@ child: align-self-center<br>
 
 <tr>
 <td>
-<b>line-height-{n}</b>
+<b>.line-height-{n}</b>
 </td>
 <td>100</td>
 <td>300</td>
@@ -401,7 +413,7 @@ child: align-self-center<br>
 
 <tr>
 <td>
-<b>word-break-{type}</b>
+<b>.word-break-{type}</b>
 </td>
 <td>--</td>
 <td>--</td>
@@ -411,7 +423,7 @@ child: align-self-center<br>
 
 <tr>
 <td>
-<b>transition-{n}</b>
+<b>.transition-{n}</b>
 </td>
 <td>50</td>
 <td>3000</td>
@@ -421,7 +433,7 @@ child: align-self-center<br>
 
 <tr>
 <td>
-<b>user-select-none</b>
+<b>.user-select-none</b>
 </td>
 <td>--</td>
 <td>--</td>
@@ -431,7 +443,7 @@ child: align-self-center<br>
 
 <tr>
 <td>
-<b>{vw|vh}-{n}</b>
+<b>.{vw|vh}-{n}</b>
 </td>
 <td>0</td>
 <td>100</td>
