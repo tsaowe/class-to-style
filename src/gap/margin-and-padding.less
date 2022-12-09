@@ -1,16 +1,18 @@
-@typeList: margin, padding;
+@marginPaddingList: margin, padding;
 @directionList: top, right, bottom, left;
-@maxLoop: 51;
+@marginAndPaddingMinValue: 0;
+@marginAndPaddingMaxValue: 50;
+@marginAndPaddingStep: 2;
 
 
 // Loop through the typeList and directionList and maxLoop to create the classes
 //  eg:  margin-top-2, margin-top-4, ..., margin-top-100
-each(@typeList, .(@type){
+each(@marginPaddingList, .(@type){
 
   each(@directionList,.(@direction){
 
-    each(range(@maxLoop),.(@i){
-      @j: (@i - 1) * 2;
+    each(range(@marginAndPaddingMinValue, @marginAndPaddingMaxValue, @marginAndPaddingStep), .(@value){
+      @j: @value * @marginAndPaddingStep;
       .@{type}-@{direction}-@{j}{@{type}-@{direction}: @j * 1px;}
     });
 
@@ -20,10 +22,10 @@ each(@typeList, .(@type){
 
 
 //  eg:  margin-2, margin-4, ..., margin-100
-each(@typeList, .(@type){
-  each(range(@maxLoop),.(@i){
+each(@marginPaddingList, .(@type){
+  each(range(@marginAndPaddingMinValue, @marginAndPaddingMaxValue, @marginAndPaddingStep), .(@value){
     // multiply by 2px to convert to px
-    @j: (@i - 1) * 2;
+    @j: @value * @marginAndPaddingStep;
     .@{type}-@{j} {
         @{type}: @j * 1px;
     }
@@ -31,11 +33,11 @@ each(@typeList, .(@type){
 });
 
 //  eg: margin: 2px 2px;
-each(@typeList, .(@type){
-  each(range(@maxLoop),.(@i){
-    @ii: (@i - 1) * 2;
-    each(range(@maxLoop),.(@j){
-      @jj: @j * 2;
+each(@marginPaddingList, .(@type){
+  each(range(@marginAndPaddingMinValue, @marginAndPaddingMaxValue, @marginAndPaddingStep), .(@value1){
+    @ii: @value1 * @marginAndPaddingStep;
+    each(range(@marginAndPaddingMinValue, @marginAndPaddingMaxValue, @marginAndPaddingStep), .(@value2){
+      @jj: @value2 * @marginAndPaddingStep;
         .@{type}-@{ii}-@{jj} {
             @{type}: @ii * 1px @jj * 1px;
         }

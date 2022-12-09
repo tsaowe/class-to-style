@@ -1,10 +1,10 @@
-@min: 0;
-@max: 100;
-@step: 1;
+@vwAndVhMinValue: 0;
+@vwAndVhMaxValue: 100;
+@vwAndVhStep: 1;
 
 
 //  vw
-each(range(@min, @max, @step), .(@i) {
+each(range(@vwAndVhMinValue, @vwAndVhMaxValue, @vwAndVhStep), .(@i) {
   @vw: @i;
   .vw-@{vw} {
       width: @vw * 1vw;
@@ -12,7 +12,7 @@ each(range(@min, @max, @step), .(@i) {
 });
 
 //  vh
-each(range(@min, @max, @step), .(@i) {
+each(range(@vwAndVhMinValue, @vwAndVhMaxValue, @vwAndVhStep), .(@i) {
   @vh: @i;
   .vh-@{vh} {
       height: @vh * 1vh;

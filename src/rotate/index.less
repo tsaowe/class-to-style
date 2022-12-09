@@ -1,10 +1,10 @@
-@min: 0;
-@max: 360;
-@step: 1;
+@rotateMinDegValue: 0;
+@rotateMaxDegValue: 360;
+@rotateStep: 1;
 
 
 //  rotate
-each(range(@min, @max, @step), .(@i) {
+each(range(@rotateMinDegValue, @rotateMaxDegValue, @rotateStep), .(@i) {
   @rotate: @i;
   .rotate-@{rotate} {
     transform: rotate(@rotate * 1deg);

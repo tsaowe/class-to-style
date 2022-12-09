@@ -1,9 +1,9 @@
-@min: 50;
-@max: 3000;
-@step: 50;
+@transitionMinValue: 50;
+@transitionMaxValue: 3000;
+@transitionStep: 50;
 
 // transition-[50,100,150,...3000]
-each(range(@min, @max, @step), .(@i) {
+each(range(@transitionMinValue, @transitionMaxValue, @transitionStep), .(@i) {
   @transition: @i;
   .transition-@{transition} {
     transition: all @transition * 1ms;

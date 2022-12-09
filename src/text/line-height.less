@@ -1,11 +1,10 @@
-@min: 1;
-@max: 3;
-@step: 0.1;
+@lineHeightMinValue: 1;
+@lineHeightMaxValue: 3.01;
+@lineHeightStep: 0.1;
 
 
 //  line-height
-each(range(@min, @max, @step), .(@i) {
-
+each(range(@lineHeightMinValue, @lineHeightMaxValue, @lineHeightStep), .(@i) {
   @lineHeight: floor(@i * 100);
   .line-height-@{lineHeight} {
     line-height: percentage(@i);

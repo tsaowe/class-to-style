@@ -1,10 +1,10 @@
 @positionValues: absolute, relative, fixed, sticky, static, inherit, initial, unset;
 
-@directions: top, right, bottom, left;
+@positionDirections: top, right, bottom, left;
 
-@min: 0;
-@max: 100;
-@step: 2;
+@positionMinValue: 0;
+@positionMaxValue: 100;
+@positionStep: 2;
 
 each(@positionValues, .(@positionValue) {
   .position-@{positionValue} {
@@ -12,8 +12,8 @@ each(@positionValues, .(@positionValue) {
   }
 });
 
-each(@directions, .(@direction) {
-  each(range(@min, @max, @step), .(@i) {
+each(@positionDirections, .(@direction) {
+  each(range(@positionMinValue, @positionMaxValue, @positionStep), .(@i) {
     @value: @i;
     .@{direction}-@{value} {
       @{direction}: @value * 1px;
@@ -22,5 +22,5 @@ each(@directions, .(@direction) {
 });
 
 
-@import "float";
-@import "z-index";
+@import "float.less";
+@import "z-index.less";
