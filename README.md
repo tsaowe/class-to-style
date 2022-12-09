@@ -17,7 +17,7 @@ yarn add class-to-style
 npm install class-to-style
 
 // usage
-import 'class-to-style/dist/class-to-style.css'
+import 'class-to-style/dist/class-to-style.min.css'
 
 
 ```
@@ -26,11 +26,11 @@ import 'class-to-style/dist/class-to-style.css'
 <table>
 <thead>
 <tr>
-<th style="width: 250px">class name</th>
-<th>min value</th>
-<th>max value</th>
-<th>step</th>
-<th>compile css</th>
+<td width="250">class name</td>
+<td >min value</td>
+<td >max value</td>
+<td >step</td>
+<td >compile css</td>
 </tr>
 </thead>
 <tbody>
@@ -43,8 +43,8 @@ import 'class-to-style/dist/class-to-style.css'
 <td>width: 0px|2px|4px|...|100px</td>
 </tr>
 
-<tr><td><b>width-auto</b></td><td>--</td><td>--</td><td>--</td><td>width: auto</td></tr>
-<tr><td><b>width-100-percent</b></td><td>--</td><td>--</td><td>--</td><td>width: 100%</td></tr>
+<tr><td><b>.width-auto</b></td><td>--</td><td>--</td><td>--</td><td>width: auto</td></tr>
+<tr><td><b>.width-100-percent</b></td><td>--</td><td>--</td><td>--</td><td>width: 100%</td></tr>
 
 
 
