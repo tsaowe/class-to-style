@@ -49,9 +49,9 @@ import 'class-to-style/dist/class-to-style.min.css'
 <tr>
 <td><b>.width-{n}</b></td>
 <td>0</td>
-<td>100</td>
+<td>400</td>
 <td>2</td>
-<td>width: 0px|2px|4px|...|100px</td>
+<td>width: 0px|2px|4px|...|400px</td>
 </tr>
 
 <tr><td><b>.width-auto</b></td><td>--</td><td>--</td><td>--</td><td>width: auto</td></tr>
@@ -62,9 +62,9 @@ import 'class-to-style/dist/class-to-style.min.css'
 <tr>
 <td><b>.height-{n}</b></td>
 <td>0</td>
-<td>100</td>
+<td>400</td>
 <td>2</td>
-<td>height: 0px|2px|4px|...|100px</td>
+<td>height: 0px|2px|4px|...|400px</td>
 </tr>
 
 <tr><td><b>height-auto</b></td><td>--</td><td>--</td><td>--</td><td>height: auto</td></tr>
