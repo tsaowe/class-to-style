@@ -71,6 +71,17 @@ import 'class-to-style/dist/class-to-style.min.css'
 <tr><td><b>height-100-percent</b></td><td>--</td><td>--</td><td>--</td><td>height: 100%</td></tr>
 
 
+<tr>
+<td><b>.square-{n}</b></td>
+<td>0</td>
+<td>400</td>
+<td>2</td>
+<td>
+width: 0px|2px|4px|...|400px; height: 0px|2px|4px|...|400px; <br>
+height: 0px|2px|4px|...|400px; width: 0px|2px|4px|...|400px;
+</td>
+</tr>
+
 
 <tr>
 <td><b>.border-radius-{n}</b></td>

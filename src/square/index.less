@@ -1,0 +1,7 @@
+each(range(0, 400, 2), .(@i) {
+  @borderWidth: @i;
+  .square-@{i} {
+    height: @i * 1px;
+    width: @i * 1px;
+  }
+});
