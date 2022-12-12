@@ -6,7 +6,18 @@
   </a>
 </p>
 
-> only use css to style your content, It's easy to use and powerful.
+> You can just use class to style your html element, It's very easy but powerful.
+> 
+```html
+
+
+<div class="margin-20-30">
+  <div class="width-50 height-50">
+    <div class="rotate-90-deg font-12-regular">this div will rotate 90 deg</div>
+  </div>
+</div>
+
+```
 
 
 ## Install
@@ -77,6 +88,24 @@ import 'class-to-style/dist/class-to-style.min.css'
 <td>100</td>
 <td>10</td>
 <td>border-radius: 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%;</td>
+</tr>
+
+<tr>
+<td>
+<b>.border-1px-{type}</b>
+</td>
+<td>--</td>
+<td>--</td>
+<td>--</td>
+<td>
+border: 1px solid | dashed | dotted | double | groove | hidden | inset | outset | ridge | none | initial | inherit;
+<br>
+<br>
+<i>
+*In addition, You need to add custom color to the element, 
+such as :<br><b>border-color: red;</b>
+</i>
+</td>
 </tr>
 
 <tr>
@@ -423,7 +452,7 @@ child: align-self-center<br>
 
 <tr>
 <td>
-<b>.transition-{n}</b>
+<b>.transition-{n}-ms</b>
 </td>
 <td>50</td>
 <td>3000</td>
