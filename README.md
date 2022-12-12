@@ -77,8 +77,8 @@ import 'class-to-style/dist/class-to-style.min.css'
 <td>400</td>
 <td>2</td>
 <td>
-width: 0px|2px|4px|...|400px; height: 0px|2px|4px|...|400px; <br>
-height: 0px|2px|4px|...|400px; width: 0px|2px|4px|...|400px;
+width: 0px|2px|4px|...|400px; <br>
+height: 0px|2px|4px|...|400px; <br>
 </td>
 </tr>
 
