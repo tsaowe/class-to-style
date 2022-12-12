@@ -84,6 +84,21 @@ height: 0px|2px|4px|...|400px; <br>
 
 
 <tr>
+<td>
+<b>.size-{m}-{n}</b> <br>
+<b>.rectangle-{m}-{n}</b> <br>
+</td>
+<td>0</td>
+<td>100</td>
+<td>2</td>
+<td>
+width: 0px|2px|4px|...|100px; <br>
+height: 0px|2px|4px|...|100px; <br>
+</td>
+</tr>
+
+
+<tr>
 <td><b>.border-radius-{n}</b></td>
 <td>0</td>
 <td>100</td>
