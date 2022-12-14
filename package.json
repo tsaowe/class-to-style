@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "lessc src/index.less dist/class-to-style.css",
     "build": "lessc src/index.less dist/class-to-style.min.css --clean-css",
-    "v": "yarn dev && yarn build && git add . && git commit -m 'build' && npm version patch && npm publish && git push origin main"
+    "v": "yarn dev && yarn build && git add . && git commit -m 'build' && npm version patch && npm publish --registry=https://registry.npmjs.org/ && git push origin main"
   },
   "dependencies": {},
   "files": [
