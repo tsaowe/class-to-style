@@ -26,11 +26,10 @@
   align-self: center;
 }
 
-////  gap-[2,4,6,...50]
-each(range(@gapMax), .(@gap) {
-  @gapValue: @gap * 2;
-  .gap-@{gapValue} {
-    gap: @gapValue * 2px;
+////  gap-[0,2,4,6,...40]
+each(range(0, 40, 2), .(@gap) {
+  .gap-@{gap} {
+    gap: @gap * 1px;
   }
 });
 //  gap-2-4

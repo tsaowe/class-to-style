@@ -301,8 +301,8 @@ such as :<br><b>border-color: red;</b>
 <td>2</td>
 <td>padding-{ left | right | bottom | top }: 0px 2px 4px 6px 8px 10px 12px 14px 16px 18px 20px 22px 24px 26px 28px 30px 32px 34px 36px 38px 40px 42px 44px 46px 48px 50px 52px 54px 56px 58px 60px 62px 64px 66px 68px 70px 72px 74px 76px 78px 80px 82px 84px 86px 88px 90px 92px 94px 96px 98px 100px;</td>
 </tr>
-<tr><td><b>.image-width-fit,<br> .image-height-auto</b></td><td>--</td><td>--</td><td>--</td><td>object-fit: cover;</td></tr>
-<tr><td><b>.image-height-fit,<br> .image-width-auto</b></td><td>--</td><td>--</td><td>--</td><td>object-fit: contain;</td></tr>
+<tr><td><b>.image-width-fit,<br> .image-height-auto</b></td><td>--</td><td>--</td><td>--</td><td>object-fit: cover; <br> background-size: auto 100%;</td></tr>
+<tr><td><b>.image-height-fit,<br> .image-width-auto</b></td><td>--</td><td>--</td><td>--</td><td>object-fit: contain; <br> background-size: 100% auto;</td></tr>
 
 <tr>
 <td>
@@ -341,6 +341,26 @@ child: align-self-center<br>
 .flex-align-end <br>
 
 </td>
+</tr>
+
+<tr>
+<td>
+<b>.gap-{n}</b>
+</td>
+<td>0</td>
+<td>40</td>
+<td>2</td>
+<td>gap: 0px 2px 4px 6px 8px 10px 12px 14px 16px 18px 20px 22px 24px 26px 28px 30px 32px 34px 36px 38px 40px;</td>
+</tr>
+
+<tr>
+<td>
+<b>.gap-{m}-{n}</b>
+</td>
+<td>0</td>
+<td>40</td>
+<td>2</td>
+<td>gap: [0px, 2px, ... 40px] [0px, 2px, ... 40px];</td>
 </tr>
 
 <tr>
