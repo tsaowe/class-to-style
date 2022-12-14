@@ -176,6 +176,20 @@ such as :<br><b>border-color: red;</b>
 <tr>
 <td>
 <b>
+.color-white-{n}
+</b>
+</td>
+<td>0</td>
+<td>100</td>
+<td>1</td>
+<td>color: rgba(255, 255, 255, 0.0|0.01|0.02|...|0.99|1); <br>
+<i>*In addition,color-white = color-white-100,</i>
+</td>
+</tr>
+
+<tr>
+<td>
+<b>
 .cursor-{name}
 </b>
 </td>

@@ -30,3 +30,13 @@ each(range(0,100,1), .(@i) {
     background-color: rgba(0,0,0,(@i/100));
   }
 });
+
+.color-white {
+    color: @color-white;
+}
+
+each(range(0,100,1), .(@i) {
+  .color-white-@{i} {
+    background-color: rgba(@color-white,(@i/100));
+  }
+});
