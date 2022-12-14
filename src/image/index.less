@@ -1,11 +1,13 @@
-@backgroundSizeTypeList:
-
 .image-width-fit, .image-height-auto {
   object-fit: cover;
-  background-size: auto 100%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .image-height-fit, .image-width-auto {
   object-fit: contain;
-  background-size: 100% auto;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
