@@ -163,6 +163,19 @@ such as :<br><b>border-color: red;</b>
 <tr>
 <td>
 <b>
+.background-black-{n} <br>
+.bg-black-{n}
+</b>
+</td>
+<td>0</td>
+<td>100</td>
+<td>1</td>
+<td>background-color: rgba(0, 0, 0, 0.0|0.01|0.02|...|0.99|1);</td>
+</tr>
+
+<tr>
+<td>
+<b>
 .cursor-{name}
 </b>
 </td>

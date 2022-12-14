@@ -23,3 +23,10 @@
 .background-black, .bg-black {
   background-color: @background-black;
 }
+
+
+each(range(0,100,1), .(@i) {
+  .background-black-@{i}, .bg-black-@{i} {
+    background-color: rgba(0,0,0,(@i/100));
+  }
+});
