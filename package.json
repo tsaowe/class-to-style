@@ -1,6 +1,6 @@
 {
   "name": "class-to-style",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "style your content with only class name",
   "main": "src/index.less",
   "repository": "git@github.com:tsaowe/class-to-style.git",
