@@ -37,6 +37,12 @@ each(range(0,100,1), .(@i) {
 
 each(range(0,100,1), .(@i) {
   .color-white-@{i} {
-    background-color: rgba(@color-white,(@i/100));
+    color: rgba(@color-white,(@i/100));
+  }
+});
+
+each(range(0,100,1), .(@i) {
+  .color-black-@{i} {
+    color: rgba(@color-black,(@i/100));
   }
 });
