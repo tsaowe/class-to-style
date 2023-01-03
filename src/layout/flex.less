@@ -11,6 +11,10 @@
     .flex();
     flex-wrap: wrap;
   }
+
+  &.column {
+    flex-direction: column;
+  }
 }
 
 .flex-wrap {
@@ -79,4 +83,46 @@ each(range(@gapMax), .(@gap1) {
 .flex-align-end {
 .flex();
   align-items: flex-end;
+}
+
+.flex-center-center, .flex-both-center {
+  .flex();
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-start-center {
+  .flex();
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-end-center {
+  .flex();
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-start-start {
+  .flex();
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.flex-end-start {
+  .flex();
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.flex-start-end {
+  .flex();
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.flex-end-end {
+  .flex();
+  align-items: flex-end;
+  justify-content: flex-end;
 }
