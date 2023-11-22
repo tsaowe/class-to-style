@@ -1,0 +1,48 @@
+@import "../util/constant.less";
+
+.background-google-blue, .bg-google-blue {
+  background-color: @googleBlue;
+}
+
+.background-google-red, .bg-google-red {
+  background-color: @googleRed;
+}
+
+.background-google-yellow, .bg-google-yellow {
+  background-color: @googleYellow;
+}
+
+.background-google-green, .bg-google-green {
+  background-color: @googleGreen;
+}
+
+.background-white, .bg-white {
+  background-color: @background-white;
+}
+
+.background-black, .bg-black {
+  background-color: @background-black;
+}
+
+
+each(range(0,100,1), .(@i) {
+  .background-black-@{i}, .bg-black-@{i} {
+    background-color: rgba(0,0,0,(@i/100));
+  }
+});
+
+.color-white {
+    color: @color-white;
+}
+
+each(range(0,100,1), .(@i) {
+  .color-white-@{i} {
+    color: rgba(@color-white,(@i/100));
+  }
+});
+
+each(range(0,100,1), .(@i) {
+  .color-black-@{i} {
+    color: rgba(@color-black,(@i/100));
+  }
+});

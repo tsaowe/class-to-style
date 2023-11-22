@@ -1,0 +1,11 @@
+@zIndexMinValue: 0;
+@zIndexMaxValue: 10;
+@zIndexStep: 1;
+
+//  z-index
+each(range(@zIndexMinValue, @zIndexMaxValue, @zIndexStep), .(@i) {
+  @zIndex: @i;
+  .z-index-@{zIndex} {
+    z-index: @zIndex;
+  }
+});

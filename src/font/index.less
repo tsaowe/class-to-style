@@ -1,0 +1,27 @@
+@fontSizeMin: 0;
+@fontSizeMax: 25;
+
+.font(@fontSize,@fontWeight:400, @isRegular: true) {
+  font-size: @fontSize * 1px;
+  font-family: if(@isRegular, PingFangSC-Regular, PingFangSC-Medium), PingFang SC, sans-serif;
+  font-weight: @fontWeight;
+}
+
+
+//  font-[12,14,16,...50]
+each(range(@fontSizeMin, @fontSizeMax), .(@fontSize) {
+  @currentFontSize: @fontSize * 2;
+  .font-@{currentFontSize}-regular {
+    .font(@currentFontSize, 400, true);
+  }
+  .font-@{currentFontSize}-medium {
+    .font(@currentFontSize, 500, false);
+  }
+});
+
+
+each(range(100, 1000,100), .(@fontWeight) {
+  .font-weight-@{fontWeight} {
+    font-weight: @fontWeight;
+  }
+});

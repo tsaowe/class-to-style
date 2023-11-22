@@ -1,0 +1,12 @@
+@opacityMinValue: 0;
+@opacityMaxValue: 1.05;
+@opacityStep: 0.05;
+
+//  opacity
+each(range(@opacityMinValue, @opacityMaxValue, @opacityStep), .(@i) {
+  @opacity: @i;
+  @opacity100: floor(@i * 100);
+    .opacity-@{opacity100} {
+        opacity: @opacity;
+    }
+});

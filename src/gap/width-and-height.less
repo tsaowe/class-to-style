@@ -1,0 +1,41 @@
+@widthAndHeightList: width, height;
+
+// Loop through the typeList and maxLoop to create the classes
+each(@widthAndHeightList, .(@type){
+  each(range(201),.(@i){
+    // multiply by 2px to convert to px
+    @j: (@i - 1) * 2;
+    .@{type}-@{j} {
+        @{type}: @j * 1px;
+    }
+  });
+});
+
+
+.width-100-percent {
+    width: 100%;
+}
+
+.width-auto {
+    width: auto;
+}
+
+.height-100-percent {
+    height: 100%;
+}
+
+.height-auto {
+    height: auto;
+}
+
+
+each(range(0,400,2), .(@i) {
+  .min-width-@{i} {
+    min-width: @i * 1px;
+  }
+});
+
+
+.min-width-auto {
+  min-width: auto;
+}

@@ -1,0 +1,39 @@
+@minValueForBorder: 0;
+@maxValueForBorder: 100;
+@stepForBorder: 1;
+
+
+@borderPercentStart: 0;
+@borderPercentEnd: 1;
+@borderPercentStep: 0.1;
+
+
+@borderTypes: dashed dotted double groove hidden inset outset ridge solid;
+
+
+.border-none {
+  border: none;
+}
+
+//  border-radius
+each(range(0, 100, 2), .(@i) {
+  @borderRadius: @i;
+  .border-radius-@{borderRadius} {
+    border-radius: @borderRadius * 1px;
+  }
+});
+
+//  border-radius
+each(range(0, 1, 0.1), .(@i) {
+  @borderRadius: ceil(@i * 100);
+  .border-radius-@{borderRadius}-percent {
+    border-radius: percentage(@i);
+  }
+});
+
+
+each(@borderTypes, .(@borderType) {
+  .border-1px-@{borderType} {
+    border: 1px @borderType;
+  }
+});

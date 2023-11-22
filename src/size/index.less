@@ -1,0 +1,8 @@
+each(range(0, 100, 2), .(@width) {
+  each(range(0, 100, 2), .(@height) {
+    .size-@{width}-@{height}, .rectangle-@{width}-@{height} {
+      width: @width * 1px;
+      height: @height * 1px;
+    }
+  });
+});

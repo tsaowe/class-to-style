@@ -1,0 +1,19 @@
+@displayList: block, inline, inline-block, inline-table, list-item, run-in, table, table-caption, table-column-group, table-header-group, table-footer-group, table-row-group, table-cell, table-column, table-row, none, initial, inherit;
+
+.hide, .hidden {
+  display: none;
+}
+
+each(@displayList, .(@display) {
+  .display-@{display} {
+    display: @display;
+  }
+});
+
+.visibility-visible {
+  visibility: visible;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}

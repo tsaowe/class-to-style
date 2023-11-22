@@ -1,0 +1,26 @@
+@positionValues: absolute, relative, fixed, sticky, static, inherit, initial, unset;
+
+@positionDirections: top, right, bottom, left;
+
+@positionMinValue: 0;
+@positionMaxValue: 100;
+@positionStep: 2;
+
+each(@positionValues, .(@positionValue) {
+  .position-@{positionValue} {
+    position: @positionValue;
+  }
+});
+
+each(@positionDirections, .(@direction) {
+  each(range(@positionMinValue, @positionMaxValue, @positionStep), .(@i) {
+    @value: @i;
+    .@{direction}-@{value} {
+      @{direction}: @value * 1px;
+    }
+  });
+});
+
+
+@import "float.less";
+@import "z-index.less";

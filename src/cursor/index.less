@@ -1,0 +1,7 @@
+@cursorList: default, pointer, move, crosshair, text, wait, help, progress, not-allowed, e-resize, ne-resize, nw-resize, n-resize, se-resize, sw-resize, s-resize, w-resize, ew-resize, ns-resize, nesw-resize, nwse-resize, col-resize, row-resize, all-scroll, zoom-in, zoom-out, grab, grabbing;
+
+each(@cursorList, .(@cursor) {
+  .cursor-@{cursor} {
+    cursor: @cursor;
+  }
+});

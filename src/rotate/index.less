@@ -1,0 +1,12 @@
+@rotateMinDegValue: 0;
+@rotateMaxDegValue: 360;
+@rotateStep: 1;
+
+
+//  rotate
+each(range(@rotateMinDegValue, @rotateMaxDegValue, @rotateStep), .(@i) {
+  @rotate: @i;
+  .rotate-@{rotate}-deg {
+    transform: rotate(@rotate * 1deg);
+  }
+});

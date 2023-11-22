@@ -1,0 +1,25 @@
+@import "../util/constant.less";
+@relativeMaxValue: 50;
+
+// Loop through the typeList and maxLoop to create the classes
+each(@directionList, .(@direction){
+  each(range(@relativeMaxValue),.(@i){
+    // multiply by 2px to convert to px
+    @j: @i * 2;
+    .move-towards-@{direction}-@{j} {
+      position: relative;
+        @{direction}: @j * -1px;
+    }
+  });
+});
+
+// [left, right, top, bottom]-[0,10,20,30,40,50...]-percent
+each(@directionList, .(@direction){
+  each(range(0,1,0.1),.(@i){
+    // multiply by 2px to convert to px
+    @j: ceil(@i * 100);
+    .@{direction}-@{j}-percent {
+        @{direction}: percentage(@i);
+    }
+  });
+});

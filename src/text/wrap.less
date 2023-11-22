@@ -1,0 +1,15 @@
+@wordBreakList: break-all, break-word, keep-all, normal, inherit;
+
+each(@wordBreakList, .(@wordBreak) {
+  .word-break-@{wordBreak} {
+    word-break: @wordBreak;
+  }
+});
+
+.word-break-all {
+  word-break: break-all;
+}
+
+.word-break-word {
+  word-break: break-word;
+}

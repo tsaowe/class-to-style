@@ -1,0 +1,138 @@
+@gapMax: 20;
+
+
+.flex {
+  display: flex;
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+////  gap-[0,2,4,6,...40]
+each(range(0, 40, 2), .(@gap) {
+  .gap-@{gap} {
+    gap: @gap * 1px;
+  }
+});
+//  gap-2-4
+each(range(@gapMax), .(@gap1) {
+  @gap1Value: @gap1 * 2;
+  each(range(@gapMax), .(@gap2) {
+    @gap2Value: @gap2 * 2;
+    .gap-@{gap1Value}-@{gap2Value} {
+      gap: @gap1Value * 1px @gap2Value * 1px;
+    }
+  });
+});
+
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-space-between, .flex-justify-content-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-space-around, .flex-justify-content-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-center, .flex-justify-center, .flex-justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-align-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-align-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.flex-center-center, .flex-both-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-start-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-end-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-start-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.flex-end-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.flex-start-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.flex-end-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.flex-center-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.flex-center-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}

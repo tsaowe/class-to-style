@@ -1,0 +1,20 @@
+@vwAndVhMinValue: 0;
+@vwAndVhMaxValue: 100;
+@vwAndVhStep: 1;
+
+
+//  vw
+each(range(@vwAndVhMinValue, @vwAndVhMaxValue, @vwAndVhStep), .(@i) {
+  @vw: @i;
+  .vw-@{vw} {
+      width: @vw * 1vw;
+  }
+});
+
+//  vh
+each(range(@vwAndVhMinValue, @vwAndVhMaxValue, @vwAndVhStep), .(@i) {
+  @vh: @i;
+  .vh-@{vh} {
+      height: @vh * 1vh;
+  }
+});
